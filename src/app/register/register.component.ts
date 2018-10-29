@@ -25,7 +25,6 @@ export class RegisterComponent implements OnInit {
   }
 
   Register() {
-
     this.sodeservice.register(this.formData).subscribe(res => {
       if (!res.error) {
         swal("User Register Successfully").then(res => {
@@ -35,7 +34,6 @@ export class RegisterComponent implements OnInit {
     }, error => {
       console.log("API Error");
     })
-
   }
   login(){
     this.router.navigate(['login']);
