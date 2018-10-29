@@ -1,0 +1,38 @@
+<div class="container main-container">
+
+  <div class="row" style="width: 99%;">
+
+    <div class="col-md-4" style="margin-top: 10%"></div>
+    <div class="col-md-4" style="margin: 0% 15% 0% 35%;">
+      <mat-card class="mat-card-design" style="height:100%; width: 50%">
+        <form class="example-form" id="formid">
+          <label style="font-weight: 800;color: #da1842;">Register</label>
+          <br>
+          <br>
+          <mat-form-field class="example-full-width firstname">
+            <input matInput placeholder="First Name"  [(ngModel)]="formData.firstname" [formControl]="val_firstname">
+          </mat-form-field>
+          <br>
+          <mat-form-field class="example-full-width lastname">
+            <input matInput placeholder="Last Name"  [(ngModel)]="formData.lastname" [formControl]="val_lastname">
+          </mat-form-field>
+          <br>
+          <mat-form-field class="example-full-width email">
+            <input matInput placeholder="Email"  [(ngModel)]="formData.email" [formControl]="val_email">
+          </mat-form-field>
+          <br>
+          <mat-form-field class="example-full-width password">
+            <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" name="password"  [(ngModel)]="formData.password" [formControl]="val_password">
+
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+          </mat-form-field>
+          <div>
+            <button style="margin-left:40px" mat-raised-button class="Loginbutton" [disabled]="" (click)="Register()">Register</button>
+            <button style="margin-left:40px" mat-raised-button class="Loginbutton" (click)="login()">SignIn</button>
+          </div>
+        </form>
+      </mat-card>
+    </div>
+    <div class="col-md-4" style="margin-top:9%"></div>
+  </div>
+</div>

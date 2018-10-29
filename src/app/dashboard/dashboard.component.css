@@ -1,0 +1,48 @@
+.first-container {
+    width: 100%;
+    min-height: 97vh;
+    display: -ms-flexbox;
+    align-items: center;
+    align-items: center;
+    background-image: linear-gradient(-225deg, #77FFD2 0%, #6297DB 48%, #1EECFF 100%);
+    background-blend-mode: screen;
+    overflow: hidden;
+  }
+  
+  .Logoutbutton {
+    float: right;
+    margin-right: 2%;
+    margin-top: 1%;
+    color: whitesmoke;
+    background-color: rgb(223, 23, 23);
+    transition: transform .2s;
+    box-shadow: 6px 5px 15px grey;
+    word-spacing: 3px;
+  }
+  
+  .uploadbutton {
+    width: 10%;
+    height: 30px;
+    color: whitesmoke;
+    background-color: #2f4e86;
+    transition: transform .2s;
+    box-shadow: 6px 5px 15px grey;
+    word-spacing: 3px;
+  }
+  
+  .main-mat {
+    margin-top: 12%;
+    margin-right: 15%;
+    margin-left: 15%;
+  }
+  
+  .label{
+      font-size: 20px;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+  }
+  .abs{
+      font-size: 15px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  

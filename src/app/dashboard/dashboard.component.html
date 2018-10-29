@@ -1,0 +1,24 @@
+<div class="container first-container">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <button mat-raised-button class="Logoutbutton" [disabled]="" (click)="LogOut()">Logout</button>
+    </div>
+    <div class="col-md-4"></div>
+  <mat-card class="main-mat">
+    <mat-label class="label">Upload File</mat-label>
+    <br>
+    <br>
+    <div class="abs">
+      <div class="row">
+          <input type="file" name="photo" ng2FileSelect [uploader]="uploader" />
+
+          <button type="button" class="uploadbutton" 
+            (click)="uploader.uploadAll()" 
+            [disabled]="!uploader.getNotUploadedItems().length" >
+                Upload
+          </button>
+      </div>
+    </div>
+  </mat-card>
+
+</div>

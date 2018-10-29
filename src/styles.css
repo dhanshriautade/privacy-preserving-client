@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.swal-modal{
+    border-radius: 33px !important;
+    width: 352px !important;
+  }
+  /* .swal-button{
+    margin: 0px 117px 0px -104px !important;
+  } */
+  .swal-button--confirm{
+   margin: 0px 108px 0px -68px !important; 
+    /* margin: 0px 130px 0px -89px !important; */
+   background-color: #006eaf !important;
+   width: 59%;
+  }
+  .swal-button--danger{
+    background-color: #e64942 !important;
+    margin: 0% 75% 0% 0% !important;
+       /* width: 112%; */
+       width: auto;
+      float: right;
+  }
+  .swal-button--cancel{
+    margin: -46% 82% -56% 0% !important;
+      float: right !important;
+        color: white !important;
+        background-color: #a5a3a3 !important;
+    
+  }
+  .swal-title{
+    font-size: 19px !important;
+  }

@@ -1,0 +1,36 @@
+<div class="container first-container">
+
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <button mat-raised-button class="Loginbutton" [disabled]="" (click)="Login()">Login</button>
+    <button mat-raised-button class="Registerbutton" [disabled]="" (click)="Register()">Register</button>
+  </div>
+  <div class="col-md-4"></div>
+
+  <mat-card class="main-mat">
+    <mat-label class="label">Abstract</mat-label>
+    <br>
+    <br>
+    <div class="abs">
+      Cloud computing provides individuals and enterprises massive computing power and scalable storage
+      capacities to support a variety of big data applications in domains like health care and scientiﬁc research,
+      therefore more and more data owners are involved to outsource their data on cloud servers for great convenience
+      in data management and mining. However, data sets like health records in electronic documents usually contain
+      sensitive information, which brings about privacy concerns if the documents are released or shared to partially
+      untrusted third-parties in cloud. A practical and widely used technique for data privacy preservation is to
+      encrypt data before outsourcing to the cloud servers, which however reduces the data utility and makes many
+      traditional data analytic operators like keyword-based top-k document retrieval obsolete. In this paper, we
+      investigate the multi-keyword top-k search problem for big data encryption against privacy breaches, and attempt
+      to identify an efﬁcient and secure solution to this problem. Speciﬁcally, for the privacy concern of query data,
+      we construct a special tree-based index structure and design a random traversal algorithm, which makes even the
+      same query to produce different visiting paths on the index, and can also maintain the accuracy of queries
+      unchanged under stronger privacy. For improving the query efﬁciency, we propose a group multi-keyword top-k
+      search scheme based on the idea of partition, where a group of tree-based indexes are constructed for all
+      documents. Finally, we combine these methods together into an efﬁcient and secure approach to address our
+      proposed top-k similarity search. Extensive experimental results on real-life data sets demonstrate that our
+      proposed approach can signiﬁcantly improve the capability of defending the privacy breaches, the scalability and
+      the time efﬁciency of query processing over the state-of-the-art methods.
+    </div>
+  </mat-card>
+
+</div>

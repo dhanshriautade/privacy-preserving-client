@@ -1,0 +1,30 @@
+<div class="container main-container">
+
+    <div class="row" style="width: 99%;">
+
+      <div class="col-md-4" style="margin-top: 15%"></div>
+      <div class="col-md-4" style="margin: 0% 15% 0% 35%;">
+        <mat-card class="mat-card-design" style="height:100%; width: 50%">
+          <form class="example-form" id="formid">
+            <label style="font-weight: 800;color: #da1842;">Login</label>
+            <br>
+            <br>
+            <mat-form-field class="example-full-width email">
+              <input matInput placeholder="Email" [(ngModel)]="formData.email" [formControl]="val_email">
+            </mat-form-field>
+            <br>
+            <mat-form-field class="password">
+              <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" name="password"  [(ngModel)]="formData.password"  [formControl]="val_password">
+
+              <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+            </mat-form-field>
+            <div>
+              <button mat-raised-button style="margin-left:60px" class="Loginbutton" [disabled]="" (click)="Login()">Login</button>
+              <button mat-raised-button style="margin-left:20px" class="Loginbutton" (click)="home()">Home</button>
+            </div>
+          </form>
+        </mat-card>
+      </div>
+      <div class="col-md-4" style="margin-top:15%"></div>
+    </div>
+  </div>
